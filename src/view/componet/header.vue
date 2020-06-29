@@ -19,8 +19,8 @@
 		  	<li class="active"><router-link to="/">公司首页</router-link></li>
 		  	<!-- <li><a href="">关于朋乐</a></li> -->
 		  	<li><router-link to="/product">产品服务</router-link></li>
-		  	<li><router-link to="">解决方案</router-link></li>
-		  	<li><router-link to="">客户案例</router-link></li>
+		  	<li><router-link to="/absolute">解决方案</router-link></li>
+		  	<li><router-link to="/clientCase">客户案例</router-link></li>
 		  	<li><router-link to="">新闻中心</router-link></li>
 		  	<li><router-link to="/about">关于我们</router-link></li>
 		  </ul>
