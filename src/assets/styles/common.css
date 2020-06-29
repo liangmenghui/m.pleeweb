@@ -1,0 +1,71 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+.title {
+    margin-bottom: 0.2rem;
+}
+
+.txt-c {
+    text-align: center;
+}
+.title h2 {
+    margin-top: 0.4rem;
+    font-size: 0.4rem;
+    line-height: 100%;
+    color: #000;
+	font-family: "microsoft yahei";
+}
+
+.title em {
+    font-size: 0.3rem;
+	line-height: 28px;
+    color: #666;
+    text-transform: uppercase;
+}
+.common1{
+	padding-top:0.4rem;
+	padding-bottom: 0.4rem;
+	background:#fbfbfa;	
+}
+.item-title{
+	color:#221815;
+	font-size: 0.4rem;
+	text-align: center;	
+	padding:0.4rem 0 0 0;
+}
+.item-title em{
+	font-size: 0.31rem;
+	font-weight: normal;
+	display: block;
+	line-height: 0.54rem;
+	letter-spacing: -1px;
+	color:#999;
+}
+
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+font-size: 0;
+clear: both;
+visibility: hidden;
+}
+ 
+.clearfix {
+zoom: 1;
+}
+.container-s{
+	width: 96%;
+	margin:0 auto;
+	overflow: hidden;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}

@@ -1,0 +1,24 @@
+<template>
+  <div id="app">
+	 <router-view></router-view>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'app',
+  components:{}
+}
+</script>
+
+<style>
+	body {
+	    -moz-user-select:none;  /* Firefox私有属性 */
+	    -webkit-user-select:none;  /* WebKit内核私有属性 */
+	    -ms-user-select:none;  /* IE私有属性(IE10及以后) */
+	    -khtml-user-select:none;  /* KHTML内核私有属性 */
+	    -o-user-select:none;  /* Opera私有属性 */
+	    user-select:none;  /* CSS3属性 */
+	}
+ 
+</style>
