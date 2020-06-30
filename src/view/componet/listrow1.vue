@@ -12,7 +12,7 @@
 		        <span class="title">{{item.title}}</span>
 				<p>{{item.content}}</p>
 		        <div class="bottom clearfix">		          
-		          <el-button  type="primary" plain class="button" >查看详情</el-button>
+		          <el-button size="small"  type="primary" plain class="button" >查看详情</el-button>
 		        </div>
 		      </div>
 		    </el-card>
