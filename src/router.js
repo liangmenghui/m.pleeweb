@@ -5,6 +5,7 @@ import about from './view/about.vue'
 import product from './view/product.vue'
 import absolute from './view/absolute.vue'
 import clientCase from './view/clientCase.vue'
+import caseDetail from './view/caseDetail.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -47,6 +48,14 @@ export default new Router({
 			component:clientCase,
 			meta:{
 				title:"客户案例"
+			}
+		},
+		{
+			path:'/caseDetail/:id',
+			name:'caseDetail',
+			component:caseDetail,
+			meta:{
+				title:"客户案例详情"
 			}
 		}
 	]	

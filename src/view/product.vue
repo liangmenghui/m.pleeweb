@@ -27,10 +27,10 @@
 			return{
 				banners:[
 					{						
-						imgs:require("../assets/prdouct/bannerpic.jpg"),
+						src:require("../assets/prdouct/bannerpic.jpg"),
 						target:""
 					},{
-						imgs:require("../assets/image/maxBanner3.jpg"),
+						src:require("../assets/image/maxBanner3.jpg"),
 						target:""
 					}
 				],

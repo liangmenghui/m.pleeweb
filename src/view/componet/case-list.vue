@@ -5,8 +5,11 @@
 			<em>Client Case</em>
 		</div>
 		<div class="caseSec">
-			<ul class="triumph">
-				<li v-for="(item,index) in caseInfo" :key="index">
+			<ul class="triumph">				
+				<router-link tag="li"
+				 v-for="(item,index) in caseInfo" :key="index"
+				 :to="'/caseDetail/'+item.id"
+				 >
 					<a class="clearfix">
 						<span class="timg">
 							<img :src="item.pic" alt="">
@@ -16,8 +19,8 @@
 							<p>{{item.content}}</p>
 							<span class="clock">{{item.time}}</span>
 						</div>
-					</a>
-				</li>
+					</a>				
+				</router-link>
 			</ul>
 		</div>
 	</div>

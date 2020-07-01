@@ -27,12 +27,13 @@
 			return{					
 				banners:[
 					{						
-						imgs:require("../assets/case/casebanner.jpg"),
+						src:require("../assets/case/casebanner.jpg"),
 						target:""
 					}
 				],
 				caseInfo:[
 					{
+						id:'001',
 						pic:require("../assets/case/EVE.png"),
 						url:"",
 						cusName:"EVE亿纬锂能MES系统",
@@ -41,6 +42,7 @@
 						
 					},
 					{
+						id:'002',
 						pic:require("../assets/case/sumeida.jpg"),
 						url:"",
 						cusName:"江苏苏美达MES系统",
@@ -49,6 +51,7 @@
 					
 					},
 					{
+						id:'003',
 						pic:require("../assets/case/hge.jpg"),
 						url:"",
 						cusName:"HEG海格科技HR系统",
@@ -58,6 +61,7 @@
 						
 					},
 					{
+						id:'004',
 						pic:require("../assets/case/junya.jpg"),
 						url:"",
 						cusName:"广东俊骏亚电子科技MES系统",

@@ -36,10 +36,10 @@
 			return{					
 				banners:[
 					{						
-						imgs:require("../assets/image/mesBanner.jpg"),
+						src:require("../assets/image/mesBanner.jpg"),
 						target:""
 					},{
-						imgs:require("../assets/image/maxBanner3.jpg"),
+						src:require("../assets/image/maxBanner3.jpg"),
 						target:""
 					}
 				],

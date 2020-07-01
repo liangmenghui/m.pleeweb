@@ -61,14 +61,20 @@
 				</div>
 			</el-tab-pane>
 			<el-tab-pane label="企业相册" name="team">
-				<swiper ref="mySwiper1" :options="swiperOption" >
+				<album
+				 :albumImgs="albumImgs" 
+				 :sightName="sightName"
+				 :gallaryImgs="gallaryImgs"
+				 >
+				</album>
+				<!-- <swiper ref="mySwiper1" :options="swiperOption" >
 					<swiper-slide class="teamSwiper" v-for="(item,index) in swiperTame" :key="index">
 						<a>
 							<img class="swpier-img" :src="item.imgs" alt="">
 						</a>
 					</swiper-slide>	
 					<div class="swiper-pagination"  slot="pagination"></div>
-				</swiper>				 
+				</swiper> -->				 
 			</el-tab-pane>			
 			<el-tab-pane label="人才招聘" name="fourth" style="margin-bottom: 4.5rem;">
 				<el-collapse v-model="activeCollapse">
@@ -95,12 +101,14 @@
 					</bm-marker>
 				</baidu-map>
 			</el-tab-pane>
-		</el-tabs>
+		</el-tabs>	
 	</div>
 </template>
 
 <script>
 import { BaiduMap, BmMarker, BmLabel } from 'vue-baidu-map';
+import album from './album.vue';
+var vm = null;
 export default {
 	name: 'company',
 	props:{
@@ -109,7 +117,8 @@ export default {
 	components: {
 		BaiduMap,
 		BmLabel,
-		BmMarker
+		BmMarker,
+	    album,
 	},
 	data() {
 		return {
@@ -117,6 +126,9 @@ export default {
 			zoom: 15,
 			activeCollapse: ['1'],
 			activeName: 'first',
+			albumImgs: 'https://img1.qunarzz.com/sight/p0/1807/f3/f3a998c29724c22aa3.water.jpg_600x330_c61a3161.jpg',			
+			gallaryImgs: ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+			sightName: "朋乐全体成员",
 			activities: [
 				{
 					content: '研究国内外MES系统的产品及相关标准自主研发PMS快速开发平台，搭建MES系统',
@@ -181,15 +193,12 @@ export default {
 					requireTxt:
 						'1.本科及以上学历，思维清晰，具备良好的沟通表达能力和文档撰写能力；2.熟悉制造业生产制造业务，三年以上制造业工作经验，对现场生产制造管理、生产跟踪、质量管理、生产物流等有深刻理解；对自动化设备整合及其他系统如：ERP、MES等系统有一定了解；'
 				}
-			],
+			],			
 			swiperOption: {				
 				autoplay: 1000,//这里修改
 				loop:true,
-				pagination:'.swiper-pagination',//这里修改
-				/* pagination: {
-					el: '.swiper-pagination'
-				}, */
-				slidesPerView:1
+				pagination:'.swiper-pagination',//这里修改				
+				slidesPerView:1,				
 				
 			},
 		};
@@ -206,7 +215,7 @@ export default {
 			this.center.lng = 114.348905;
 			this.center.lat = 23.027115;
 			this.zoom = 15;
-		}
+		}		
 	},
 	mounted() {
 		this.lng = 114.348905;
