@@ -63,6 +63,7 @@ export default {
 		margin:0 auto;
 		text-align: center;
 		width: 100%;
+		margin-bottom: 50px;
 	}
 	.banner-img{
 		width: 98%;

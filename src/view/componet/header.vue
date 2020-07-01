@@ -1,6 +1,6 @@
 <template>
 	<div >
-		<div class="header">
+		<div class="header" v-show="showAbs">
 			<div class="container-s c">
 				<div class="logo fl">
 					<a href=""><img src="../../assets/image/logo.png" alt=""></a>
@@ -33,10 +33,28 @@
 		name:"homeHeader",
 		data(){
 			return{
+				  showAbs:true,
 				  drawer: false,
 				  direction:"rtl"
 			}
-		}
+		},
+		methods:{
+			handleScroll (){				
+				const top = document.documentElement.scrollTop ||document.documentElement.body || window.pageYOffset
+				
+				if (top > 60) {
+				  let opacity = top / 140
+				  opacity = opacity > 1 ? 1 : opacity
+				  this.opacityStyle = { opacity }
+				  this.showAbs = false
+				} else {
+				  this.showAbs = true
+				}
+			}
+		},
+		mounted () {
+		 window.addEventListener('scroll',this.handleScroll)
+		},
 	}
 </script>
 
