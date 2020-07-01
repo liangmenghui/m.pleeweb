@@ -4,7 +4,8 @@
 		<home-swiper :banners="banners"></home-swiper>	
 		<company :swiperTame="swiperTame"></company>			
 		<page-footer></page-footer>
-		<foot-cantact></foot-cantact>	
+		<foot-cantact></foot-cantact>
+		
 	</div>
 </template>
 
@@ -13,7 +14,8 @@
 	import HomeSwiper from './componet/swiper.vue'	
 	import pageFooter from './componet/footer'
 	import footCantact from './componet/foot-contact'
-	import company from './componet/company'
+	import company from './componet/company'	
+	
 	export default{
 		name:"home",
 		components:{
@@ -21,17 +23,16 @@
 			HomeSwiper,	
 			company,
 			pageFooter,
-			footCantact,
-			
+			footCantact,		
 		},
 		data(){
-			return{					
+			return{								
 				banners:[
 					{						
-						imgs:require("../assets/image/mesBanner.jpg"),
+						src:require("../assets/image/mesBanner.jpg"),
 						target:""
 					},{
-						imgs:require("../assets/image/maxBanner3.jpg"),
+						src:require("../assets/image/maxBanner3.jpg"),
 						target:""
 					}
 				],
@@ -46,6 +47,9 @@
 				]
 				
 			}
+		},
+		methods:{
+			
 		}
 	}
 </script>

@@ -52,11 +52,11 @@
 		},
 		methods:{
 			toUrl(url){
-				console.log(url)
+				
 			}
 		},
 		mounted() {
-			console.log(this.serice)
+			
 		}
 	}
 </script>

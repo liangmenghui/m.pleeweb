@@ -28,7 +28,7 @@
 			return{					
 				banners:[
 					{						
-						imgs:require("../assets/absolut/abslt.jpg"),
+						src:require("../assets/absolut/abslt.jpg"),
 						target:""
 					}
 				],

@@ -27,34 +27,46 @@
 			return{					
 				banners:[
 					{						
-						imgs:require("../assets/case/casebanner.jpg"),
+						src:require("../assets/case/casebanner.jpg"),
 						target:""
 					}
 				],
 				caseInfo:[
 					{
-						img:require("../assets/image/dzhy.jpg"),
+						id:'001',
+						pic:require("../assets/case/EVE.png"),
 						url:"",
-						title:"电子行业MES系统解决方案",
-						content:" 随着全球经济一体化的不断加剧，中国在电子组装、SMT贴片、PCB组装等领域取得了很大的突破，企业规模和数量随着不断增加，造成成本压力增加、产品生命...",
+						cusName:"EVE亿纬锂能MES系统",
+						content:"亿纬锂能创立于2001年,自2009年在深圳创业板上市至今,已形成锂原电池、锂离子电池、电源系统... ",
+						time:"2019-03"
 						
 					},
 					{
-						img:require("../assets/image/xny.png"),
+						id:'002',
+						pic:require("../assets/case/sumeida.jpg"),
 						url:"",
-						title:"新能源行业MES系统解决方案",
+						cusName:"江苏苏美达MES系统",
+						content:"江苏苏美达集团有限公司（苏美达集团）成立于1978年，是中国机械工业集团有限公司（国机集团）的重要成员企业。国机集团是由中央直接管理的国有重要骨干企业，位于世界500强企业第250位",
+						time:"2018年9月"
 					
 					},
 					{
-						img:require("../assets/image/wjcz.jpg"),
+						id:'003',
+						pic:require("../assets/case/hge.jpg"),
 						url:"",
-						title:"五金制造行业MES系统解决方案",
+						cusName:"HEG海格科技HR系统",
+						content:"惠州海格科技股份有限公司成立于2008年，经过多年专注的发展，在电子制造服务（EMS）领域积累了丰富的经验和技术。",
+						time:"",
+						time:"2018-05"
 						
 					},
 					{
-						img:require("../assets/image/PCB.jpg"),
+						id:'004',
+						pic:require("../assets/case/junya.jpg"),
 						url:"",
-						title:"PCB行业MES系统解决方案",
+						cusName:"广东俊骏亚电子科技MES系统",
+						content:"骏亚集团，成立于2005年，作为亚洲大型PCB制造及配套服务商，国家级高新技术企业，其产品广泛应用于IT通讯器材、消费电子、电脑及周边、 汽车电子、工控能源等行业，销售遍布",
+						time:"2019-08"
 						
 					}
 					
