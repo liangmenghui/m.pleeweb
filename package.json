@@ -12,7 +12,7 @@
     "element-ui": "^2.4.5",
     "fastclick": "^1.0.6",
     "style": "0.0.3",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^2.6.7",
     "vue-baidu-map": "^0.21.22",
